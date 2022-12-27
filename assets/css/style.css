@@ -197,3 +197,79 @@ body {
   font-family: "Graphik LCG", sans-serif;
   font-size: 15px;
 }
+
+a {
+  text-decoration: none;
+
+  color: #000000;
+}
+
+.container {
+  width: min(100% - 40px, 1340px);
+
+  margin-inline: auto;
+}
+
+.btn {
+  border-width: 1px;
+  border-style: solid;
+}
+.btn--light {
+  border-color: rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+}
+.btn--accent {
+  color: #ffffff;
+  border-color: rgba(255, 99, 54, 0.5);
+  background-color: #ff6336;
+}
+.btn--sm {
+  min-width: 120px;
+  min-height: 45px;
+}
+.header-menu {
+  position: relative;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+
+  padding: 25px 0;
+
+  gap: 50px;
+}
+
+.navbar__btn {
+  display: none;
+}
+.navbar__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+
+  list-style: none;
+
+  gap: 42px;
+}
+.actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  gap: 10px;
+}

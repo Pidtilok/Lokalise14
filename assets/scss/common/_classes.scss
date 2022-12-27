@@ -1,2 +1,30 @@
 @use "../presets" as *;
 @use "../mixins" as *;
+
+.container {
+  width: min(100% - 40px, 1340px);
+  margin-inline: auto;
+}
+
+.btn {
+  border-width: 1px;
+  border-style: solid;
+  &--light {
+    background-color: $color-white;
+    border-color: rgba($color-black, 0.5);
+  }
+  &--accent {
+    background-color: $color-accent;
+    color: $color-white;
+    border-color: rgba($color-accent, 0.5);
+
+  }
+  &--sm {
+    min-width: 120px;
+    min-height: 45px;
+
+  }
+  &--md {
+
+  }
+}

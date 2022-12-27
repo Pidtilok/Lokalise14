@@ -1,0 +1,10 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.header-menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 25px 0;
+}
