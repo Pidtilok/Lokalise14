@@ -1,2 +1,43 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
+
+
+.header-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-direction: column;
+
+  &__title {
+    font-size: 60px;
+    line-height: 70px;
+    width: 550px;
+    padding-top: 85px;
+  }
+
+  &__description {
+    font-size: 25px;
+    width: 470px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+  }
+
+  &__actions {
+    padding-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gap-sm;
+  }
+
+  &__notes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 370px;
+  }
+
+  &__picture {
+    position: absolute;
+    left: 614px;
+    top: 270px;
+  }
+}
