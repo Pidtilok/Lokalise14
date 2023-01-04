@@ -1,34 +1,35 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
 
-
-.control-content {
+.developers-content {
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
   flex-direction: column;
-  align-items: flex-end;
-  align-content: flex-start;
+  align-content: flex-end;
+  align-items: flex-start;
+
+
 
   &__title {
     font-size: 50px;
     line-height: 60px;
-    width: 493px;
-    padding-top: 100px;
+    width: 350px;
+    padding-bottom: 5px;
+    padding-top: 40px;
   }
 
   &__description {
     font-size: 20px;
-    width: 490px;
+    width: 520px;
     padding-bottom: 35px;
   }
 
   &__item {
     font-size: 20px;
     font-weight: 600;
-    width: 490px;
+    width: 100px;
     margin-bottom: 400px;
-
   }
 
   &__picture {
