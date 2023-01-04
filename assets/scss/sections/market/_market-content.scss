@@ -1,14 +1,6 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
 
-.market {
-  background-image: url(/assets/img/main2.png);
-  background-position: 5% 50%;
-
-  background-repeat: no-repeat;
-  padding: 80px 0;
-  margin-bottom: 250px;
-}
 
 .market-content {
   display: flex;
@@ -40,5 +32,3 @@
     width: 100px;
   }
 }
-
-
