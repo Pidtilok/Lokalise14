@@ -13,6 +13,7 @@
 .btn {
   border-width: 1px;
   border-style: solid;
+  font-weight: 600;
   cursor: pointer;
   &--light {
     background-color: $color-white;
