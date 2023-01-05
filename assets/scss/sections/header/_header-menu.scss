@@ -5,7 +5,21 @@
   position: relative;
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: $gap 50px;
   padding: 25px 0;
-  margin-bottom: 1px;
+
+  @include lg {
+    flex-direction: column;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -50vw;
+    width: 100vw;
+    height: 1px;
+    background-color: $color-gray;
+  }
 }

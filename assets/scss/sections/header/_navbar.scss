@@ -2,8 +2,8 @@
 @use "../../mixins" as *;
 
 .navbar {
-  width: 100%;
-
+  flex-grow: 1;
+  justify-self: flex-start;
   &__btn {
     display: none;
   }
@@ -12,9 +12,29 @@
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
-    gap: 42px;
-    margin-left: auto;
+    justify-content: center;
+
+    @include xl-min {
+      gap: 22px;
+    }
+    @include xl {
+      gap: 15px;
+    }
 
     @include unlist;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    display: block;
+
+    @include xl-min {
+      padding: 10px;
+    }
+    @include xl {
+      padding: 7px;
+    }
   }
 }

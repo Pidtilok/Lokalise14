@@ -6,28 +6,29 @@
   margin-inline: auto;
 }
 
+.visually-hidden {
+  @include visually-hidden;
+}
+
 .btn {
   border-width: 1px;
   border-style: solid;
-  font-weight: 600;
+  cursor: pointer;
   &--light {
     background-color: $color-white;
     border-color: rgba($color-black, 0.5);
   }
   &--accent {
     background-color: $color-accent;
+    border-color: $color-accent;
     color: $color-white;
-    border-color: rgba($color-accent, 0.5);
-
   }
   &--sm {
     min-width: 120px;
     min-height: 45px;
-
   }
   &--md {
     min-width: 160px;
     min-height: 60px;
-
   }
 }

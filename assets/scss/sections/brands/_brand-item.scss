@@ -1,7 +1,7 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
 
-.actions {
-  display: flex;
-  gap: $gap-sm;
+.brand-item {
+  &__logo {
+  }
 }

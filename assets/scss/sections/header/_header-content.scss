@@ -1,44 +1,69 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
 
-
 .header-content {
-  display: flex;
-  flex-wrap: wrap;
-  flex-grow: 1;
-  flex-direction: column;
+  display: grid;
+
+  align-items: center;
+  row-gap: 25px;
+  padding: 127px 0;
+
+  @include xl-min {
+    grid-template-areas: "ttl pic" "dsc pic" "act pic" "nts pic";
+    grid-template-columns: 560px 1fr;
+  }
+  @include xl-lg {
+    grid-template-areas: "ttl pic" "dsc pic" "act pic" "nts pic";
+    grid-template-columns: 1fr 1fr;
+  }
+  @include lg {
+    grid-template-areas: "ttl" "dsc" "pic" "act" "nts";
+    text-align: center;
+  }
 
   &__title {
-    font-size: 60px;
-    line-height: 70px;
-    width: 550px;
-    padding-top: 85px;
+    grid-area: ttl;
+    margin: 0 0 $gap-md;
   }
 
   &__description {
-    font-size: 25px;
-    width: 470px;
-    padding-top: 10px;
-    padding-bottom: 50px;
+    grid-area: dsc;
+    line-height: 1.4;
+    margin-bottom: $gap;
+    @include xl-min {
+      font-size: 25px;
+    }
+    @include xl {
+      font-size: 1.25rem;
+    }
+    @include lg-min {
+      padding-right: 70px;
+    }
   }
-
   &__actions {
-    padding-bottom: 25px;
+    grid-area: act;
     display: flex;
-    flex-wrap: wrap;
     gap: $gap-sm;
-  }
 
+    @include lg {
+      justify-content: center;
+    }
+  }
   &__notes {
-    display: flex;
-    flex-wrap: wrap;
-    width: 370px;
-    padding-bottom: 170px;
+    grid-area: nts;
+    line-height: 1.67;
   }
-
   &__picture {
-    position: absolute;
-    left: 614px;
-    top: 270px;
+    grid-area: pic;
+  }
+  &__image {
+    grid-area: img;
+    @include lg-min {
+      width: 100%;
+      transform: translateX(-20px);
+    }
+    @include lg {
+      width: 50%;
+    }
   }
 }
