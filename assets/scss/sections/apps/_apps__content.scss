@@ -1,2 +1,10 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
+
+.apps__content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 125px;
+  padding-bottom: 150px;
+}
