@@ -3,23 +3,28 @@
 
 .header-menu {
   position: relative;
+
   display: flex;
   align-items: center;
-  gap: $gap 50px;
+
   padding: 25px 0;
 
+  gap: $gap 50px;
   @include lg {
     flex-direction: column;
   }
 
   &::after {
-    content: "";
     position: absolute;
     bottom: 0;
     left: 50%;
-    margin-left: -50vw;
+
     width: 100vw;
     height: 1px;
+    margin-left: -50vw;
+
+    content: "";
+
     background-color: $color-gray;
   }
 }

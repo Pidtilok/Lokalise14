@@ -3,6 +3,7 @@
 
 .navbar {
   flex-grow: 1;
+
   justify-self: flex-start;
   &__btn {
     display: none;
@@ -10,8 +11,8 @@
 
   &__list {
     display: flex;
-    flex-wrap: wrap;
     flex-grow: 1;
+    flex-wrap: wrap;
     justify-content: center;
 
     @include xl-min {
@@ -20,12 +21,10 @@
     @include xl {
       gap: 15px;
     }
-
     @include unlist;
   }
 
-  &__item {
-  }
+
 
   &__link {
     display: block;

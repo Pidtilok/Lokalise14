@@ -3,9 +3,8 @@
 
 .header-content {
   display: grid;
-
   align-items: center;
-  row-gap: 25px;
+
   padding: 127px 0;
 
   @include xl-min {
@@ -17,19 +16,24 @@
     grid-template-columns: 1fr 1fr;
   }
   @include lg {
-    grid-template-areas: "ttl" "dsc" "pic" "act" "nts";
     text-align: center;
+
+    grid-template-areas: "ttl" "dsc" "pic" "act" "nts";
   }
+  row-gap: 25px;
 
   &__title {
-    grid-area: ttl;
     margin: 0 0 $gap-md;
+
+    grid-area: ttl;
   }
 
   &__description {
-    grid-area: dsc;
-    line-height: 1.4;
     margin-bottom: $gap;
+
+    line-height: 1.4;
+
+    grid-area: dsc;
     @include xl-min {
       font-size: 25px;
     }
@@ -41,17 +45,18 @@
     }
   }
   &__actions {
-    grid-area: act;
     display: flex;
-    gap: $gap-sm;
 
+    gap: $gap-sm;
+    grid-area: act;
     @include lg {
       justify-content: center;
     }
   }
   &__notes {
-    grid-area: nts;
     line-height: 1.67;
+
+    grid-area: nts;
   }
   &__picture {
     grid-area: pic;
@@ -60,6 +65,7 @@
     grid-area: img;
     @include lg-min {
       width: 100%;
+
       transform: translateX(-20px);
     }
     @include lg {

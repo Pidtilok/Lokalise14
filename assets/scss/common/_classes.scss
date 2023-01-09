@@ -2,7 +2,8 @@
 @use "../mixins" as *;
 
 .container {
-  width: min(100% - 40px, 1340px);
+  width: min(100% - 40px, $container-width);
+
   margin-inline: auto;
 }
 
@@ -11,23 +12,27 @@
 }
 
 .btn {
+  cursor: pointer;
+
   border-width: 1px;
   border-style: solid;
-  font-weight: 600;
-  cursor: pointer;
+
   &--light {
-    background-color: $color-white;
     border-color: rgba($color-black, 0.5);
+    background-color: $color-white;
   }
+
   &--accent {
-    background-color: $color-accent;
-    border-color: $color-accent;
     color: $color-white;
+    border-color: $color-accent;
+    background-color: $color-accent;
   }
+
   &--sm {
     min-width: 120px;
     min-height: 45px;
   }
+
   &--md {
     min-width: 160px;
     min-height: 60px;
