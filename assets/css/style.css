@@ -594,7 +594,6 @@ h1 {
 
   gap: 125px;
 }
-
 .apps {
   margin-bottom: 150px;
 
@@ -724,6 +723,9 @@ h1 {
   .work__description {
     font-size: 20px;
   }
+  .apps__title {
+    font-size: 50px;
+  }
 }
 @media (min-width: 1330px) {
   .control {
@@ -845,6 +847,9 @@ h1 {
   .work__description {
     font-size: 18px;
   }
+  .apps__title {
+    font-size: 44px;
+  }
 }
 @media (max-width: 991.8px) {
   h1 {
@@ -894,6 +899,9 @@ h1 {
     gap: 30px;
   }
   .work__title {
+    font-size: 36px;
+  }
+  .apps__title {
     font-size: 36px;
   }
 }

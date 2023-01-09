@@ -7,4 +7,6 @@
   flex-direction: row;
   gap: 125px;
   padding-bottom: 150px;
+
+  @include lg-min {}
 }
