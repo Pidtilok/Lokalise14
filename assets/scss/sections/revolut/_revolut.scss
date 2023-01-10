@@ -1,0 +1,43 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.revolut {
+  background-color: $color-bg-blue;
+}
+
+.revolut__content {
+  display: grid;
+  grid-template-columns: 1fr 310px;
+  grid-template-areas: "desc pic" "cap pic" "log pic";
+}
+
+.revolut__description {
+  grid-area: desc;
+
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.33;
+  margin: 0;
+  padding-top: 60px;
+
+}
+
+.revolut__caption {
+  grid-area: cap;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.67;
+
+}
+
+.revolut__logo {
+  grid-area: log;
+  margin-bottom: 165px;
+}
+
+.revolut__picture {
+  grid-area: pic;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
