@@ -617,6 +617,8 @@ h1 {
   -webkit-box-align: center;
   align-items: center;
   -ms-flex-align: center;
+  -ms-flex-preferred-size: 25%;
+  flex-basis: 25%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -626,8 +628,6 @@ h1 {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-
-  width: 325px;
 }
 .app-item__title {
   font-size: 25px;
