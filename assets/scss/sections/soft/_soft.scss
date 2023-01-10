@@ -1,0 +1,44 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.soft {
+  background-color: $color-bg-brown;
+  margin-bottom: 165px;
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 55px;
+    padding-bottom: 55px;
+  
+  
+    @include xl-xx {
+      flex-direction: column;
+    }
+  }
+
+
+  &__title {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 1.43;
+    width: 500px;
+    height: 168px;
+    border-right: 1px solid $color-black;
+    padding-top: 16px;
+    padding-bottom: 116px;
+
+    @include xl-xx {
+      border-right: none;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.67;
+    letter-spacing: 0.75px;
+    }
+}
