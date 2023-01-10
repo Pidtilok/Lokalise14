@@ -774,12 +774,12 @@ h1 {
   -ms-flex-pack: justify;
   justify-content: space-between;
 
-  padding-top: 55px;
-  padding-bottom: 55px;
+  padding-top: 65px;
+  padding-bottom: 65px;
 }
 .soft__title {
-  width: 500px;
-  height: 168px;
+  width: 590px;
+  height: 150px;
   padding-top: 16px;
   padding-bottom: 116px;
 
@@ -975,6 +975,8 @@ h1 {
         flex-direction: column;
   }
   .soft__title {
+    width: 400px;
+
     border-right: none;
   }
 }

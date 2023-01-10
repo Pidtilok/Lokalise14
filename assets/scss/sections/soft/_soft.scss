@@ -10,10 +10,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 55px;
-    padding-bottom: 55px;
-  
-  
+    padding-top: 65px;
+    padding-bottom: 65px;
+
     @include xl-xx {
       flex-direction: column;
     }
@@ -24,13 +23,16 @@
     font-weight: 600;
     font-size: 35px;
     line-height: 1.43;
-    width: 500px;
-    height: 168px;
+    width: 590px;
+    height: 150px;
     border-right: 1px solid $color-black;
     padding-top: 16px;
     padding-bottom: 116px;
 
+
+
     @include xl-xx {
+      width: 400px;
       border-right: none;
     }
   }
@@ -40,5 +42,5 @@
     font-size: 15px;
     line-height: 1.67;
     letter-spacing: 0.75px;
-    }
+  }
 }
