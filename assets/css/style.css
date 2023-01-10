@@ -717,17 +717,15 @@ h1 {
 .revolut {
   background-color: #c9e8f2;
 }
-
 .revolut__content {
   display: grid;
 
   grid-template-areas: "desc pic" "cap pic" "log pic";
   grid-template-columns: 1fr 310px;
 }
-
 .revolut__description {
   margin: 0;
-  padding-top: 60px;
+  padding-top: 35px;
 
   font-size: 30px;
   font-weight: 400;
@@ -735,28 +733,26 @@ h1 {
 
   grid-area: desc;
 }
-
 .revolut__caption {
+  margin: 0;
+  padding-bottom: 8px;
+
   font-size: 15px;
   font-weight: 400;
   line-height: 1.67;
 
   grid-area: cap;
 }
-
 .revolut__logo {
-  margin-bottom: 165px;
+  margin-bottom: 155px;
 
   grid-area: log;
 }
-
 .revolut__picture {
   margin-top: 50px;
-  margin-bottom: 100px;
 
   grid-area: pic;
 }
-
 @media (min-width: 768px) {
   .control__content {
     gap: 15px;
@@ -783,7 +779,6 @@ h1 {
     width: 100%;
   }
 }
-
 @media (min-width: 992px) {
   .header-content__description {
     padding-right: 70px;
@@ -796,7 +791,6 @@ h1 {
             transform: translateX(-20px);
   }
 }
-
 @media (min-width: 1200px) {
   h1 {
     font-size: 65px;
@@ -845,7 +839,6 @@ h1 {
     font-size: 50px;
   }
 }
-
 @media (min-width: 1330px) {
   .control {
     gap: 138px;
@@ -876,7 +869,6 @@ h1 {
     flex-basis: 632px;
   }
 }
-
 @media (max-width: 1329.8px) {
   .control__picture {
     -webkit-box-flex: 1;
@@ -907,7 +899,6 @@ h1 {
     flex-grow: 1;
   }
 }
-
 @media (max-width: 1329.8px) and (min-width: 992px) {
   .control {
     gap: 60px;
@@ -922,7 +913,6 @@ h1 {
     gap: 60px;
   }
 }
-
 @media (max-width: 1199.8px) {
   .navbar__list {
     gap: 15px;
@@ -934,7 +924,6 @@ h1 {
     font-size: 1.25rem;
   }
 }
-
 @media (max-width: 1199.8px) and (min-width: 992px) {
   h1 {
     font-size: 50px;
@@ -973,8 +962,11 @@ h1 {
   .apps__title {
     font-size: 44px;
   }
+  .revolut__content {
+    grid-template-areas: "desc pic" "cap pic" "log pic";
+    grid-template-columns: 1fr 1fr;
+  }
 }
-
 @media (max-width: 991.8px) {
   h1 {
     font-size: 40px;
@@ -1028,8 +1020,12 @@ h1 {
   .apps__title {
     font-size: 36px;
   }
-}
+  .revolut__content {
+    text-align: center;
 
+    grid-template-areas: "desc" "pic" "cap" "log";
+  }
+}
 @media (max-width: 767.8px) {
   .control {
     -webkit-box-orient: vertical;
@@ -1064,7 +1060,6 @@ h1 {
     text-align: center;
   }
 }
-
 @media (max-width: 767.8px) and (min-width: 576px) {
   .control__image {
     width: 80%;
@@ -1079,7 +1074,6 @@ h1 {
     width: 80%;
   }
 }
-
 @media (max-width: 575.8px) {
   .control__image {
     width: 100%;

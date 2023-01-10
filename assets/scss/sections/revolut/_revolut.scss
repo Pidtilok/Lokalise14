@@ -3,41 +3,52 @@
 
 .revolut {
   background-color: $color-bg-blue;
-}
 
-.revolut__content {
+
+&__content {
   display: grid;
   grid-template-columns: 1fr 310px;
   grid-template-areas: "desc pic" "cap pic" "log pic";
+
+  @include xl-lg {
+    grid-template-areas: "desc pic" "cap pic" "log pic";
+    grid-template-columns: 1fr 1fr;
 }
 
-.revolut__description {
+@include lg {
+  text-align: center;
+
+  grid-template-areas: "desc" "pic" "cap" "log";
+}
+}
+
+&__description {
   grid-area: desc;
 
   font-weight: 400;
   font-size: 30px;
   line-height: 1.33;
   margin: 0;
-  padding-top: 60px;
-
+  padding-top: 35px;
 }
 
-.revolut__caption {
+&__caption {
   grid-area: cap;
 
   font-weight: 400;
   font-size: 15px;
   line-height: 1.67;
-
+  margin: 0;
+  padding-bottom: 8px;
 }
 
-.revolut__logo {
+&__logo {
   grid-area: log;
-  margin-bottom: 165px;
+  margin-bottom: 155px;
 }
 
-.revolut__picture {
+&__picture {
   grid-area: pic;
-  margin-top: 50px;
-  margin-bottom: 100px;
+  margin-top: 50px;;
+}
 }
