@@ -589,6 +589,9 @@ h1 {
       flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 
   padding-bottom: 150px;
 
@@ -625,9 +628,6 @@ h1 {
       flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
 }
 .app-item__title {
   font-size: 25px;
