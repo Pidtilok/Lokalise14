@@ -1,0 +1,9 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.teams__content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: $gap;
+}
