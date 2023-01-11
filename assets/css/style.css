@@ -251,6 +251,11 @@ h1 {
   border-color: #ff6336;
   background-color: #ff6336;
 }
+.btn--black {
+  color: #ffffff;
+  border-color: #000000;
+  background-color: #000000;
+}
 .btn--sm {
   min-width: 120px;
   min-height: 45px;
@@ -856,6 +861,58 @@ h1 {
 
   margin-bottom: 160px;
 }
+
+.try {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  margin-bottom: 90px;
+
+  background-color: #ff9c7d;
+}
+.try__title {
+  max-width: 700px;
+  margin: 125px auto 30px;
+
+  text-align: center;
+
+  font-size: 65px;
+  font-weight: 600;
+  line-height: 1.15;
+}
+.try__description {
+  max-width: 540px;
+  margin: 0 auto 50px;
+
+  text-align: center;
+
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.try__action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  margin-bottom: 160px;
+}
 @media (min-width: 768px) {
   .control__content {
     gap: 15px;
@@ -942,6 +999,9 @@ h1 {
     font-size: 50px;
   }
   .integrate__title {
+    font-size: 50px;
+  }
+  .try__title {
     font-size: 50px;
   }
 }
@@ -1088,6 +1148,9 @@ h1 {
   .integrate__title {
     font-size: 42px;
   }
+  .try__title {
+    font-size: 42px;
+  }
 }
 @media (max-width: 991.8px) {
   h1 {
@@ -1152,6 +1215,9 @@ h1 {
   }
   .integrate__picture {
     width: 50%;
+  }
+  .try__title {
+    font-size: 36px;
   }
 }
 @media (max-width: 767.8px) {

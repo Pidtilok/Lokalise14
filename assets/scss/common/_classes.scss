@@ -28,6 +28,12 @@
     background-color: $color-accent;
   }
 
+  &--black {
+    color: $color-white;
+    border-color: $color-black;
+    background-color: $color-black;
+  }
+
   &--sm {
     min-width: 120px;
     min-height: 45px;
