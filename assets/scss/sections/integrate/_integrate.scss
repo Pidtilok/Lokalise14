@@ -1,10 +1,8 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
+
 $container-small: 680px;
 $container-little: 540px;
-
-
-
 
 .integrate {
   display: flex;
