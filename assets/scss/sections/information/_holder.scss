@@ -1,0 +1,41 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.holder {
+  background-color: $color-bg-gray;
+
+
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    border-top: 1px solid $color-black;
+
+    @include md-xx {
+      flex-direction: column;
+    }
+  }
+
+  &__logo {
+    margin-right: 15px;
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-start;
+  }
+
+  &__copyright {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+  }
+}

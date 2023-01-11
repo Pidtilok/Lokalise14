@@ -5,6 +5,7 @@
   flex-grow: 1;
 
   justify-self: flex-start;
+
   &__btn {
     display: none;
   }
@@ -13,14 +14,16 @@
     display: flex;
     flex-grow: 1;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
 
     @include xl-min {
       gap: 22px;
     }
+
     @include xl {
       gap: 15px;
     }
+
     @include unlist;
   }
 
@@ -32,6 +35,7 @@
     @include xl-min {
       padding: 10px;
     }
+
     @include xl {
       padding: 7px;
     }

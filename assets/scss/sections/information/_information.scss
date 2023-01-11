@@ -1,0 +1,14 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.information {
+  background-color: $color-bg-gray;
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+}
+

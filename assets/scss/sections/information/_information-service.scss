@@ -1,0 +1,29 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.information-service {
+  display: flex;
+  flex-direction: row;
+  gap: 85px;
+  margin-top: 80px;
+
+  @include lg {
+    flex-direction: column;
+    align-content: center;
+  }
+}
+
+.categories {
+
+  &__title {
+    align-content: center;
+  }
+
+  &__list {
+    list-style: none;
+    line-height: 30px;
+    padding: 0;
+    max-width: 175px;
+  }
+
+}
