@@ -952,6 +952,9 @@ h1 {
         -ms-transform: translateX(-20px);
             transform: translateX(-20px);
   }
+  .integrate__image {
+    width: 100%;
+  }
 }
 @media (min-width: 1200px) {
   h1 {
@@ -1215,7 +1218,7 @@ h1 {
   .integrate__title {
     font-size: 36px;
   }
-  .integrate__picture {
+  .integrate__image {
     width: 50%;
   }
   .try__title {

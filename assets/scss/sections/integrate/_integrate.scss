@@ -22,9 +22,11 @@ $container-little: 540px;
     @include xl-min {
       font-size: 50px;
     }
+
     @include xl-lg {
       font-size: 42px;
     }
+
     @include lg {
       font-size: 36px;
     }
@@ -35,7 +37,7 @@ $container-little: 540px;
     font-size: 25px;
     line-height: 1.2;
     text-align: center;
-    
+
     max-width: $container-little;
     margin: 0 auto 25px;
   }
@@ -43,12 +45,18 @@ $container-little: 540px;
   &__picture {
     display: flex;
     justify-content: center;
+  }
+
+  &__image {
+    @include lg-min {
+      width: 100%;
+    }
 
     @include lg {
       width: 50%;
     }
-}
-  
+  }
+
   &__action {
     display: flex;
     align-items: center;
