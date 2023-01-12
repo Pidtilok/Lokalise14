@@ -233,7 +233,7 @@ h1 {
   border: 0;
 
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
 }
 
 .btn {
@@ -272,7 +272,7 @@ h1 {
 }
 
 .header {
-  min-height: 100vh;
+  /* min-height: 100vh; */
 
   background-color: #ffffff;
 }
