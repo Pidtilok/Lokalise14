@@ -10,6 +10,10 @@
   flex-basis: 399px;
   justify-content: center;
 
+  @include lg {
+    align-items: center;
+  }
+
   &__picture {
     height: 200px;
   }

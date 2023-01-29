@@ -7,4 +7,8 @@
   flex-direction: row;
   align-items: center;
   gap: $gap;
+
+  @include lg {
+    text-align: center;
+  }
 }
