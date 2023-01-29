@@ -233,7 +233,7 @@ h1 {
   border: 0;
 
   -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
+          clip-path: inset(100%);
 }
 
 .btn {
@@ -272,8 +272,6 @@ h1 {
 }
 
 .header {
-  /* min-height: 100vh; */
-
   background-color: #ffffff;
 }
 
@@ -1220,6 +1218,12 @@ h1 {
   .header-content__description {
     font-size: 1.25rem;
   }
+  .information__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
 }
 @media (max-width: 1199.8px) and (min-width: 420px) {
   .soft__content {
@@ -1335,6 +1339,11 @@ h1 {
   }
   .apps__title {
     font-size: 36px;
+  }
+  .team-item {
+    -webkit-box-align: center;
+    align-items: center;
+    -ms-flex-align: center;
   }
   .revolut__content {
     text-align: center;

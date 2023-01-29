@@ -11,6 +11,9 @@
     flex-direction: column;
     align-content: center;
   }
+  // @include sm {
+  //   flex-direction: column;
+  // }
 }
 
 .categories {
