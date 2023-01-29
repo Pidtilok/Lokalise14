@@ -23,7 +23,7 @@
     font-weight: 600;
     font-size: 35px;
     line-height: 1.43;
-    width: 590px;
+    min-width: 590px;
     height: 150px;
     border-right: 1px solid $color-black;
     padding-top: 16px;
@@ -32,7 +32,7 @@
 
 
     @include xl-xx {
-      width: 400px;
+      min-width: 400px;
       border-right: none;
     }
   }

@@ -730,7 +730,7 @@ h1 {
   display: grid;
 
   grid-template-areas: "desc pic" "cap pic" "log pic";
-  grid-template-columns: 1fr 310px;
+  grid-template-columns: 1fr auto;
 }
 .revolut__description {
   margin: 0;
@@ -787,7 +787,7 @@ h1 {
   padding-bottom: 65px;
 }
 .soft__title {
-  width: 590px;
+  min-width: 590px;
   height: 150px;
   padding-top: 16px;
   padding-bottom: 116px;
@@ -1233,7 +1233,7 @@ h1 {
         flex-direction: column;
   }
   .soft__title {
-    width: 400px;
+    min-width: 400px;
 
     border-right: none;
   }

@@ -5,50 +5,51 @@
   background-color: $color-bg-blue;
 
 
-&__content {
-  display: grid;
-  grid-template-columns: 1fr 310px;
-  grid-template-areas: "desc pic" "cap pic" "log pic";
-
-  @include xl-lg {
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr auto;
     grid-template-areas: "desc pic" "cap pic" "log pic";
-    grid-template-columns: 1fr 1fr;
-}
 
-@include lg {
-  text-align: center;
+    @include xl-lg {
+      grid-template-areas: "desc pic" "cap pic" "log pic";
+      grid-template-columns: 1fr 1fr;
+    }
 
-  grid-template-areas: "desc" "pic" "cap" "log";
-}
-}
+    @include lg {
+      text-align: center;
 
-&__description {
-  grid-area: desc;
+      grid-template-areas: "desc" "pic" "cap" "log";
+    }
+  }
 
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 1.33;
-  margin: 0;
-  padding-top: 35px;
-}
+  &__description {
+    grid-area: desc;
 
-&__caption {
-  grid-area: cap;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.33;
+    margin: 0;
+    padding-top: 35px;
+  }
 
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 1.67;
-  margin: 0;
-  padding-bottom: 8px;
-}
+  &__caption {
+    grid-area: cap;
 
-&__logo {
-  grid-area: log;
-  margin-bottom: 155px;
-}
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.67;
+    margin: 0;
+    padding-bottom: 8px;
+  }
 
-&__picture {
-  grid-area: pic;
-  margin-top: 50px;;
-}
+  &__logo {
+    grid-area: log;
+    margin-bottom: 155px;
+  }
+
+  &__picture {
+    grid-area: pic;
+    margin-top: 50px;
+    ;
+  }
 }
